@@ -5,6 +5,7 @@ import Cart from './components/Cart';
 import Footer from './components/Footer';
 import Toast from './components/Toast';
 import './App.css';
+import { getProductImage } from './utils/productImages';
 
 const API_BASE_URL = import.meta.env.VITE_API_URL || 'http://localhost:4000';
 
@@ -15,7 +16,7 @@ const fallbackProducts = [
       category: 'Electronics',
       price: 2999,
       discount: 40,
-      image: 'https://via.placeholder.com/250x250?text=Wireless+Earbuds',
+    image: getProductImage('Wireless Earbuds'),
       description: 'High-quality sound with noise cancellation',
       rating: 4.5,
       reviews: 234
@@ -26,7 +27,7 @@ const fallbackProducts = [
       category: 'Home',
       price: 599,
       discount: 35,
-      image: 'https://via.placeholder.com/250x250?text=Smart+Bulb',
+    image: getProductImage('LED Smart Bulb'),
       description: 'Control your lights with smartphone',
       rating: 4.2,
       reviews: 156
@@ -37,7 +38,7 @@ const fallbackProducts = [
       category: 'Accessories',
       price: 399,
       discount: 25,
-      image: 'https://via.placeholder.com/250x250?text=USB-C+Cable',
+    image: getProductImage('USB-C Cable'),
       description: 'Fast charging 3.0A capacity',
       rating: 4.7,
       reviews: 542
@@ -48,7 +49,7 @@ const fallbackProducts = [
       category: 'Accessories',
       price: 299,
       discount: 20,
-      image: 'https://via.placeholder.com/250x250?text=Phone+Stand',
+    image: getProductImage('Phone Stand'),
       description: 'Adjustable metal phone holder',
       rating: 4.4,
       reviews: 198
@@ -59,7 +60,7 @@ const fallbackProducts = [
       category: 'Electronics',
       price: 1299,
       discount: 30,
-      image: 'https://via.placeholder.com/250x250?text=Power+Bank',
+    image: getProductImage('Portable Power Bank'),
       description: '20000mAh fast charging',
       rating: 4.6,
       reviews: 387
@@ -70,7 +71,7 @@ const fallbackProducts = [
       category: 'Home',
       price: 999,
       discount: 45,
-      image: 'https://via.placeholder.com/250x250?text=Desk+Lamp',
+    image: getProductImage('Desk Lamp'),
       description: 'LED with flexible neck',
       rating: 4.3,
       reviews: 267
@@ -81,7 +82,7 @@ const fallbackProducts = [
       category: 'Accessories',
       price: 199,
       discount: 15,
-      image: 'https://via.placeholder.com/250x250?text=Screen+Protector',
+    image: getProductImage('Screen Protector'),
       description: 'Tempered glass for phone',
       rating: 4.5,
       reviews: 445
@@ -92,7 +93,7 @@ const fallbackProducts = [
       category: 'Electronics',
       price: 1999,
       discount: 35,
-      image: 'https://via.placeholder.com/250x250?text=Bluetooth+Speaker',
+    image: getProductImage('Bluetooth Speaker'),
       description: 'Portable with 12-hour battery',
       rating: 4.6,
       reviews: 523
@@ -103,7 +104,7 @@ const fallbackProducts = [
       category: 'Accessories',
       price: 299,
       discount: 22,
-      image: 'https://via.placeholder.com/250x250?text=Phone+Case',
+    image: getProductImage('Phone Case'),
       description: 'Shock-resistant protection',
       rating: 4.4,
       reviews: 612
@@ -114,7 +115,7 @@ const fallbackProducts = [
       category: 'Electronics',
       price: 1499,
       discount: 40,
-      image: 'https://via.placeholder.com/250x250?text=Keyboard+Mouse',
+    image: getProductImage('Keyboard & Mouse Combo'),
       description: 'Wireless with long battery life',
       rating: 4.5,
       reviews: 298
@@ -125,7 +126,7 @@ const fallbackProducts = [
       category: 'Electronics',
       price: 2499,
       discount: 28,
-      image: 'https://via.placeholder.com/250x250?text=Web+Camera',
+    image: getProductImage('Web Camera'),
       description: '1080p HD with auto focus',
       rating: 4.3,
       reviews: 176
@@ -136,7 +137,7 @@ const fallbackProducts = [
       category: 'Home',
       price: 499,
       discount: 30,
-      image: 'https://via.placeholder.com/250x250?text=Storage+Box',
+    image: getProductImage('Storage Organizer'),
       description: 'Foldable fabric storage',
       rating: 4.2,
       reviews: 234
@@ -147,7 +148,7 @@ const fallbackProducts = [
     category: 'Electronics',
     price: 1899,
     discount: 32,
-    image: 'https://via.placeholder.com/250x250?text=Gaming+Mouse',
+    image: getProductImage('Gaming Mouse'),
     description: 'Ergonomic RGB mouse with 7 buttons',
     rating: 4.5,
     reviews: 321
@@ -158,7 +159,7 @@ const fallbackProducts = [
     category: 'Electronics',
     price: 3499,
     discount: 25,
-    image: 'https://via.placeholder.com/250x250?text=Mechanical+Keyboard',
+    image: getProductImage('Mechanical Keyboard'),
     description: 'Hot-swappable switches with backlight',
     rating: 4.8,
     reviews: 287
@@ -169,7 +170,7 @@ const fallbackProducts = [
     category: 'Fitness',
     price: 799,
     discount: 30,
-    image: 'https://via.placeholder.com/250x250?text=Yoga+Mat',
+    image: getProductImage('Yoga Mat'),
     description: 'Anti-slip mat for workouts',
     rating: 4.3,
     reviews: 432
@@ -180,7 +181,7 @@ const fallbackProducts = [
     category: 'Electronics',
     price: 5999,
     discount: 35,
-    image: 'https://via.placeholder.com/250x250?text=Smartwatch',
+    image: getProductImage('Smartwatch'),
     description: 'Track fitness, calls and notifications',
     rating: 4.4,
     reviews: 512
@@ -191,7 +192,7 @@ const fallbackProducts = [
     category: 'Accessories',
     price: 2199,
     discount: 28,
-    image: 'https://via.placeholder.com/250x250?text=Backpack',
+    image: getProductImage('Travel Backpack'),
     description: 'Water-resistant backpack with USB port',
     rating: 4.5,
     reviews: 178
@@ -202,7 +203,7 @@ const fallbackProducts = [
     category: 'Home',
     price: 7499,
     discount: 40,
-    image: 'https://via.placeholder.com/250x250?text=Air+Purifier',
+    image: getProductImage('Air Purifier'),
     description: 'HEPA filter for clean air',
     rating: 4.6,
     reviews: 204
@@ -213,7 +214,7 @@ const fallbackProducts = [
     category: 'Home',
     price: 3299,
     discount: 33,
-    image: 'https://via.placeholder.com/250x250?text=Cooktop',
+    image: getProductImage('Induction Cooktop'),
     description: 'Energy efficient touch control cooktop',
     rating: 4.2,
     reviews: 389
@@ -224,7 +225,7 @@ const fallbackProducts = [
     category: 'Fitness',
     price: 2499,
     discount: 27,
-    image: 'https://via.placeholder.com/250x250?text=Fitness+Tracker',
+    image: getProductImage('Fitness Tracker'),
     description: 'Heart rate and sleep monitoring',
     rating: 4.1,
     reviews: 264
@@ -235,7 +236,7 @@ const fallbackProducts = [
     category: 'Electronics',
     price: 9999,
     discount: 30,
-    image: 'https://via.placeholder.com/250x250?text=Action+Camera',
+    image: getProductImage('Action Camera'),
     description: '4K waterproof sports camera',
     rating: 4.3,
     reviews: 156
@@ -246,7 +247,7 @@ const fallbackProducts = [
     category: 'Home',
     price: 5499,
     discount: 22,
-    image: 'https://via.placeholder.com/250x250?text=Vacuum',
+    image: getProductImage('Cordless Vacuum'),
     description: 'Lightweight vacuum for quick cleaning',
     rating: 4.4,
     reviews: 189
@@ -257,7 +258,7 @@ const fallbackProducts = [
     category: 'Accessories',
     price: 1599,
     discount: 26,
-    image: 'https://via.placeholder.com/250x250?text=Laptop+Stand',
+    image: getProductImage('Laptop Stand'),
     description: 'Adjustable aluminum stand',
     rating: 4.6,
     reviews: 245
@@ -268,7 +269,7 @@ const fallbackProducts = [
     category: 'Electronics',
     price: 7999,
     discount: 38,
-    image: 'https://via.placeholder.com/250x250?text=Headphones',
+    image: getProductImage('Noise Cancelling Headphones'),
     description: 'Over-ear headphones with deep bass',
     rating: 4.7,
     reviews: 512
@@ -279,7 +280,7 @@ const fallbackProducts = [
     category: 'Electronics',
     price: 12999,
     discount: 34,
-    image: 'https://via.placeholder.com/250x250?text=Projector',
+    image: getProductImage('Portable Projector'),
     description: 'Mini projector for home cinema',
     rating: 4.2,
     reviews: 148
@@ -290,7 +291,7 @@ const fallbackProducts = [
     category: 'Home',
     price: 1399,
     discount: 29,
-    image: 'https://via.placeholder.com/250x250?text=Electric+Kettle',
+    image: getProductImage('Electric Kettle'),
     description: 'Stainless steel auto shut-off kettle',
     rating: 4.3,
     reviews: 309
@@ -301,7 +302,7 @@ const fallbackProducts = [
     category: 'Accessories',
     price: 999,
     discount: 24,
-    image: 'https://via.placeholder.com/250x250?text=Wireless+Charger',
+    image: getProductImage('Wireless Charger'),
     description: 'Fast wireless charging pad',
     rating: 4.4,
     reviews: 278
@@ -312,7 +313,7 @@ const fallbackProducts = [
     category: 'Electronics',
     price: 4599,
     discount: 31,
-    image: 'https://via.placeholder.com/250x250?text=Smart+Hub',
+    image: getProductImage('Smart Home Hub'),
     description: 'Control all smart devices in one place',
     rating: 4.1,
     reviews: 132
@@ -323,7 +324,7 @@ const fallbackProducts = [
     category: 'Personal Care',
     price: 2499,
     discount: 36,
-    image: 'https://via.placeholder.com/250x250?text=Toothbrush',
+    image: getProductImage('Electric Toothbrush'),
     description: 'Sonic toothbrush with 5 modes',
     rating: 4.6,
     reviews: 221
@@ -334,7 +335,7 @@ const fallbackProducts = [
     category: 'Personal Care',
     price: 1999,
     discount: 28,
-    image: 'https://via.placeholder.com/250x250?text=Hair+Dryer',
+    image: getProductImage('Hair Dryer'),
     description: 'Ionic dryer with 3 heat settings',
     rating: 4.5,
     reviews: 198
@@ -345,7 +346,7 @@ const fallbackProducts = [
     category: 'Outdoors',
     price: 1499,
     discount: 33,
-    image: 'https://via.placeholder.com/250x250?text=Lantern',
+    image: getProductImage('Camping Lantern'),
     description: 'Rechargeable LED lantern',
     rating: 4.4,
     reviews: 164
@@ -356,7 +357,7 @@ const fallbackProducts = [
     category: 'Fitness',
     price: 5999,
     discount: 37,
-    image: 'https://via.placeholder.com/250x250?text=Massage+Gun',
+    image: getProductImage('Massage Gun'),
     description: 'Deep tissue muscle massage gun',
     rating: 4.5,
     reviews: 205
@@ -385,8 +386,12 @@ function App() {
           throw new Error('Failed to fetch products');
         }
         const data = await response.json();
+        const enrichedProducts = data.products.map(product => ({
+          ...product,
+          image: getProductImage(product.name) || product.image
+        }));
         if (isActive) {
-          setProducts(data.products);
+          setProducts(enrichedProducts);
         }
       } catch (error) {
         console.error(error);
