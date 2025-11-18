@@ -1,0 +1,42 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 256 256">
+  <defs>
+    <style>
+      .circle {
+        fill: white;
+        stroke: #111;
+        stroke-width: 12px;
+      }
+      .circle-inner {
+        fill: none;
+        stroke: #111;
+        stroke-width: 6px;
+      }
+      .cart {
+        fill: none;
+        stroke: #111;
+        stroke-width: 12px;
+        stroke-linecap: round;
+        stroke-linejoin: round;
+      }
+      .wheel {
+        fill: #111;
+      }
+      .text-top {
+        font: 700 38px 'Arial', sans-serif;
+        fill: #c62828;
+      }
+      .text-bottom {
+        font: 700 32px 'Arial', sans-serif;
+        fill: #111;
+      }
+    </style>
+  </defs>
+  <circle class="circle" cx="128" cy="128" r="118" />
+  <circle class="circle-inner" cx="128" cy="128" r="100" />
+  <path class="cart" d="M70 80h34l12 52h70l12-44H96" />
+  <circle class="wheel" cx="114" cy="158" r="10" />
+  <circle class="wheel" cx="182" cy="158" r="10" />
+  <text class="text-top" x="50%" y="188" text-anchor="middle">SASTA</text>
+  <text class="text-bottom" x="50%" y="226" text-anchor="middle">BAZAR</text>
+</svg>
+

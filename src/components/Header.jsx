@@ -6,7 +6,7 @@ export default function Header({ cartCount, cartItems = [], onCartClick, searchT
     <header className="header">
       <div className="header-container">
         <div className="logo">
-          <h1>🛒 Sasta Bazar</h1>
+          <h1>Sasta Bazar</h1>
           <p className="tagline">Affordable Shopping, Best Prices</p>
         </div>
         <nav className="nav">
