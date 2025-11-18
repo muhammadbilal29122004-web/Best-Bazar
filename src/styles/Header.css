@@ -15,7 +15,8 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-  gap: 2rem;
+  gap: 1.5rem;
+  flex-wrap: wrap;
 }
 
 .logo {
@@ -38,6 +39,7 @@
   flex: 1;
   display: flex;
   justify-content: center;
+  min-width: 240px;
 }
 
 .nav ul {
@@ -55,6 +57,46 @@
 
 .nav a:hover {
   opacity: 0.8;
+}
+
+.header-actions {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  flex: 1;
+  justify-content: flex-end;
+  min-width: 280px;
+}
+
+.search-bar {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  background-color: rgba(255, 255, 255, 0.15);
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  border-radius: 999px;
+  padding: 0.4rem 0.9rem;
+  flex: 1;
+  max-width: 320px;
+  transition: border-color 0.3s ease, background-color 0.3s ease;
+}
+
+.search-bar:focus-within {
+  background-color: rgba(255, 255, 255, 0.3);
+  border-color: rgba(255, 255, 255, 0.8);
+}
+
+.search-bar input {
+  background: transparent;
+  border: none;
+  outline: none;
+  color: white;
+  width: 100%;
+  font-size: 0.95rem;
+}
+
+.search-bar input::placeholder {
+  color: rgba(255, 255, 255, 0.8);
 }
 
 .cart-button {
@@ -98,6 +140,16 @@
 
   .logo h1 {
     font-size: 1.5rem;
+  }
+
+  .header-actions {
+    width: 100%;
+    flex-direction: column;
+  }
+
+  .search-bar {
+    width: 100%;
+    max-width: unset;
   }
 
   .cart-button {

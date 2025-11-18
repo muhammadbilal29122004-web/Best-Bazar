@@ -36,6 +36,23 @@
   align-items: stretch;
 }
 
+.grid-status {
+  text-align: center;
+  font-size: 1rem;
+  margin-bottom: 1.5rem;
+  color: #555;
+}
+
+.no-products {
+  text-align: center;
+  font-size: 1.2rem;
+  color: #555;
+  background-color: #fff;
+  padding: 2rem;
+  border-radius: 12px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.05);
+}
+
 @media (max-width: 768px) {
   .products-section {
     padding: 2rem 0.5rem;

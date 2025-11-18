@@ -1,0 +1,231 @@
+/* Modern Shopping Cart Styles */
+.cart-modern-bg {
+  position: fixed;
+  top: 0; left: 0; right: 0; bottom: 0;
+  background: #f5f7fa;
+  z-index: 1000;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.cart-modern-container {
+  display: flex;
+  width: 900px;
+  min-height: 600px;
+  background: #fff;
+  border-radius: 16px;
+  box-shadow: 0 8px 32px rgba(0,0,0,0.12);
+  overflow: hidden;
+}
+.cart-modern-left {
+  flex: 2;
+  background: #f5f7fa;
+  padding: 40px 32px 32px 32px;
+  display: flex;
+  flex-direction: column;
+}
+.cart-modern-header {
+  display: flex;
+  align-items: center;
+  font-size: 1.5rem;
+  margin-bottom: 32px;
+}
+.cart-modern-icon {
+  font-size: 2rem;
+  margin-right: 12px;
+}
+.cart-modern-title {
+  font-weight: 600;
+  color: #444;
+}
+.cart-modern-items {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  gap: 18px;
+}
+.cart-modern-item {
+  display: flex;
+  align-items: center;
+  background: #fff;
+  border-radius: 12px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.04);
+  padding: 16px 20px;
+  gap: 18px;
+  position: relative;
+}
+.cart-modern-img {
+  width: 56px;
+  height: 56px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 2px solid #e0e0e0;
+}
+.cart-modern-details {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+.cart-modern-name {
+  font-weight: 500;
+  color: #222;
+}
+.cart-modern-meta {
+  font-size: 0.95rem;
+  color: #888;
+  display: flex;
+  gap: 12px;
+}
+.cart-modern-color {
+  color: #4a90e2;
+}
+.cart-modern-ref {
+  color: #bbb;
+}
+.cart-modern-qty {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  background: #f0f0f0;
+  border-radius: 8px;
+  padding: 4px 10px;
+}
+.cart-modern-qty button {
+  background: #e0e0e0;
+  border: none;
+  border-radius: 50%;
+  width: 24px;
+  height: 24px;
+  font-size: 1.1rem;
+  cursor: pointer;
+  color: #444;
+  transition: background 0.2s;
+}
+.cart-modern-qty button:disabled {
+  opacity: 0.5;
+  cursor: not-allowed;
+}
+.cart-modern-price {
+  font-weight: 600;
+  color: #222;
+  min-width: 110px;
+  text-align: right;
+}
+.cart-modern-remove {
+  background: none;
+  border: none;
+  color: #c00;
+  font-size: 1.5rem;
+  cursor: pointer;
+  margin-left: 10px;
+  transition: color 0.2s;
+}
+.cart-modern-remove:hover {
+  color: #f00;
+}
+.cart-modern-footer {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-top: 32px;
+}
+.cart-modern-back {
+  background: none;
+  border: none;
+  color: #444;
+  font-size: 1rem;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  gap: 4px;
+  transition: color 0.2s;
+}
+.cart-modern-back:hover {
+  color: #222;
+}
+.cart-modern-subtotal {
+  font-size: 1.1rem;
+  font-weight: 500;
+  color: #222;
+  display: flex;
+  gap: 10px;
+}
+.cart-modern-empty {
+  color: #888;
+  font-size: 1.1rem;
+  margin-top: 40px;
+}
+.cart-modern-right {
+  flex: 1.2;
+  background: linear-gradient(120deg, #2d2d2d 70%, #f5f7fa 100%);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 48px 32px;
+  position: relative;
+}
+.cart-modern-cardform {
+  background: none;
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+  width: 100%;
+  max-width: 320px;
+}
+.cart-modern-cardtitle {
+  color: #ffd600;
+  font-size: 1.4rem;
+  font-weight: 600;
+  margin-bottom: 8px;
+}
+.cart-modern-cardtypes {
+  display: flex;
+  gap: 18px;
+  margin-bottom: 8px;
+}
+.cart-modern-cardtype {
+  opacity: 0.5;
+  cursor: pointer;
+  border-radius: 8px;
+  padding: 4px 8px;
+  background: #fff1;
+  transition: opacity 0.2s, background 0.2s;
+  display: flex;
+  align-items: center;
+}
+.cart-modern-cardtype.selected {
+  opacity: 1;
+  background: #ffd60033;
+}
+.cart-modern-input {
+  width: 100%;
+  padding: 10px 12px;
+  border-radius: 6px;
+  border: 1px solid #ddd;
+  font-size: 1rem;
+  background: #fff;
+  color: #222;
+  margin-bottom: 0;
+}
+.cart-modern-cardrow {
+  display: flex;
+  gap: 12px;
+}
+.cart-modern-checkout {
+  background: #ffd600;
+  color: #222;
+  font-weight: 600;
+  font-size: 1.1rem;
+  border: none;
+  border-radius: 8px;
+  padding: 12px 0;
+  margin-top: 8px;
+  cursor: pointer;
+  transition: background 0.2s;
+  box-shadow: 0 2px 8px #ffd60033;
+}
+.cart-modern-checkout:hover {
+  background: #ffb300;
+}
